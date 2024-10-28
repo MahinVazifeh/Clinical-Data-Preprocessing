@@ -1,0 +1,1 @@
+This repository contains the preprocessing steps for clinical data provided by the Mondino Foundation, specifically for the Brainteaser Project. The preprocessing pipeline includes selecting important subscores, calculating age at visit date, determining relapse number, and computing the MSSS score, ensuring the dataset is fully prepared for subsequent analysis.

@@ -1,8 +1,8 @@
-🧪 Clinical Data Processing
+🧪 **Clinical Data Processing**
 
 This repository contains a comprehensive suite of Jupyter notebooks for clinical data preprocessing, feature engineering, and quality control. It is particularly tailored for analyzing longitudinal datasets such as those used in neurological disease progression (e.g., MS).
-📌 Overview
 
+📌 **Overview**
 The pipeline handles tasks like:
 
     🧬 Feature selection and generation

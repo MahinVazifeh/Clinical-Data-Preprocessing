@@ -1,50 +1,41 @@
-🧪 **Clinical Data Processing**
+# 🧪 Clinical Data Processing
 
-This repository provides a structured set of Jupyter notebooks for clinical data preprocessing, feature engineering, and quality control. It is designed for longitudinal data analysis, with a focus on disease progression modeling—such as in Multiple Sclerosis (MS).
+This repository offers a structured collection of **Jupyter notebooks** designed for comprehensive **clinical data processing**. Its functionalities encompass:
 
-📌 **Overview**
-The pipeline handles tasks like:
+* **Data Preprocessing**: Cleaning, transforming, and preparing raw clinical data for analysis.
+* **Feature Engineering**: Creating new, informative features from existing data to enhance model performance.
+* **Quality Control**: Implementing checks and procedures to ensure data accuracy and reliability.
 
-    🧬 Feature selection and generation
+The tools within this repository are specifically tailored for **longitudinal data analysis**, with a particular emphasis on **disease progression modeling**. A prime example of its application is in understanding and predicting the progression of diseases like **Multiple Sclerosis (MS)**.
 
-    🧹 Outlier detection and data cleaning
+## 📌 Overview
 
-    📅 Time-based feature extraction
+This project includes a modular pipeline for:
 
-    📈 Disease progression tracking
+* **🧬 Selecting and generating important clinical features**
+* **🧹 Cleaning data and removing outliers**
+* **📅 Extracting time-based features**
+* **📈 Tracking clinical progression metrics** (e.g., MSSS)
+* **🎯 Normalizing scores and rounding values**
+* **✅ Ensuring data quality and consistency**
 
-    🎯 Score normalization
+Each notebook is designed to work independently or as part of a full pipeline.
 
-    ✅ Data validation and quality control
+## 📂 Scripts Included
 
-Each notebook is modular, enabling flexible use based on your analysis needs.
+### 🔧 Core Preprocessing & Feature Engineering
 
-📂 Scripts Breakdown
-🔧 Core Preprocessing & Feature Engineering
-No.	Notebook	Description
-1️⃣	Select_Important_Features_From_Original.ipynb	Selects key features from the raw dataset
-1️⃣.5️⃣	Update_Original_Data.ipynb	Updates and integrates engineered features
-2️⃣	Year_Month_DateOfVisit.ipynb	Extracts year and month from visit dates
-3️⃣	Relapse_Feature.ipynb	Creates a binary relapse feature
-4️⃣	Treatment.ipynb	Encodes treatment-related data
-5️⃣	MSSS_Progression_Features.ipynb	Derives MSSS progression features
-6️⃣	Delete_Duplicate_Age_at_Visit_Date.ipynb	Removes duplicate records by age and date
-7️⃣	MSSS_Score.ipynb	Calculates MSSS scores from clinical metrics
-8️⃣	Feature_Selection_for_MSSS_Data_Visualization.ipynb	Selects features for MSSS visualization
-9️⃣	Season_Feature_Generation.ipynb	Generates seasonal labels (Spring, Summer, etc.)
-🔟	Outlier_Detection.ipynb	Identifies statistical outliers
-1️⃣1️⃣	Round_SubScores.ipynb	Rounds subscores for consistency
-🛠️ Utility Notebooks
-Notebook	Description
-📊 __Compare_two_CSV.ipynb	Compares two CSV files side-by-side
-📈 __First_Last_Obs.ipynb	Extracts first and last visits per subject
-🔢 __N_Observation_per_Subject.ipynb	Counts observations per subject
-🚀 Getting Started
-
-Each notebook can be run independently, but for full reproducibility, it's recommended to follow them in order (1 → 11).
-
-You can start by cloning the repo:
-
-git clone https://github.com/your-username/clinical-data-processing.git
-
-Open the notebooks in your preferred Jupyter environment (e.g., Jupyter Lab, VS Code, Google Colab).
+| Num | Notebook                                      | Description                                                               |
+| :-- | :-------------------------------------------- | :------------------------------------------------------------------------ |
+| 1   | `Select_Important_Features_From_Original.ipynb` | Selects key clinical features from the original dataset.                  |
+| 1.5 | `Update_Original_Data.ipynb`                  | Updates the original data with newly derived or cleaned fields.           |
+| 2   | `Year_Month_DateOfVisit.ipynb`                | Extracts year and month from visit dates.                                 |
+| 3   | `Relapse_Feature.ipynb`                       | Creates a binary relapse indicator per visit.                             |
+| 4   | `Treatment.ipynb`                             | Encodes treatment information and relevant interventions.                 |
+| 5   | `MSSS_Progression_Features.ipynb`             | Creates progression-related MSSS features.                                |
+| 6   | `Delete_Duplicate_Age_at_Visit_Date.ipynb`    | Removes duplicated age and visit date records.                            |
+| 7   | `MSSS_Score.ipynb`                            | Computes the Multiple Sclerosis Severity Score (MSSS).                    |
+| 8   | `Feature_Selection_for_MSSS_Data_Visualization.ipynb` | Filters features for better MSSS visualization.                           |
+| 9   | `Season_Feature_Generation.ipynb`             | Adds seasonal context (Spring, Summer, etc.) to visits.                   |
+| 10  | `Outlier_Detection.ipynb`                     | Identifies and flags statistical outliers.                                |
+| 11  | `Round_SubScores.ipynb`                       | Rounds sub-scores for standardized representation.                        |
